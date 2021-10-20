@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <main>
+        <div class="image">
+            <div class="image__image1">
+                <img src="./img/photo1.png" alt="Backbag">
+                <div class="prices">
+                    <h2>Vintage Backbag</h2>
+                    <p>
+                        <strong>$54.99</strong><del>$94.99</del>
+                    </p>
+                    <div class="buttons">
+                        <button>
+                            <i class="fas fa-minus"aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus"aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="image__image1">
+                <img src="./img/photo2.png" alt="Backbag">
+                <div class="prices">
+                    <h2>Levi Shoes</h2>
+                    <p>
+                        <strong>$74.99</strong><del>$124.99</del>
+                    </p>
+                    <div class="buttons">
+                        <button>
+                            <i class="fas fa-minus"aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus"aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="shipping__total">
+                <div class="image__shipping">
+                    <p>Shipping</p>
+                    <p id="p_price">$19</p>
+                </div>
+                <div class="image__shipping">
+                    <p>Total</p>
+                    <p id="p_price">$148.98</p>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <div class="info">
+                <h3>Contact İnformation</h3>
+                <form action="#">
+                    <label for="email">Email</label><br>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="E-mail" id="email" placeholder="Enter your email...">
+                    </div><br>
+                    <label for="phone">Phone</label><br>
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" name="Phone" id="phone" placeholder="Enter your phone...">
+                    </div><br><br>
+                </form>
+            </div>
+            <div class="address">
+                <h3>Shipping Address</h3>
+                <form action="#">
+                    <label for="fullname">Full Name</label><br>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="Full Name" id="fullname" placeholder="Enter your full name...">
+                    </div><br>
+                    <label for="address">Address</label><br>
+                    <div class="input-field">
+                        <i class="fas fa-home"></i>
+                        <input type="text" name="Address" id="address" placeholder="Enter your address...">
+                    </div><br>
+                    <label for="city">City</label><br>
+                    <div class="input-field">
+                        <i class="fas fa-city"></i>
+                        <input type="text" name="City" id="city" placeholder="Enter your city...">
+                    </div><br>
+                    <div id="country-postcode">
+                        <div>
+                            <label for="country">Country</label><br>
+                            <div class="input-field">
+                                <i class="fas fa-globe-europe"></i>
+                                <select name="Country" id="country">
+                                <option value="Turkey" selected>Turkey</option>
+                                <option value="Germany">Germany</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label id="postcode-label" for="postcode">Post Code</label><br>
+                            <div class="input-field">
+                                <i id="postcode-i" class="fas fa-mail-bulk"></i>
+                                <input type="text" name="Post Code" id="postcode" placeholder="Enter your post code...">
+                            </div><br><br>
+                        </div>
+                    </div>
+                    <div id="input-label">
+                        <input type="checkbox" name="info_next" id="info">
+                        <label for="info">See this information next time</label><br><br>
+                    </div>
+                </form>
+            </div>
+            <div id=continue>
+                <button type="submit">Continue</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
